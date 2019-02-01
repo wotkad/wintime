@@ -1,0 +1,33 @@
+.review-callback-bg
+.review-callback
+	.review-callback__header
+		.review-callback__header-container
+			.review-callback__header-container-title Оставить отзыв
+			.review-callback__header-container-close
+				i.fa.fa-times
+	.review-callback__body
+		form(action="#").review-callback__body-form
+			.review-callback__body-form-title Букмекер
+			.review-callback__body-form-select#bookmaker-select(data-target="") Букмекер 1xBet
+			.review-callback__body-form-options
+				.review-callback__body-form-options-option(data-target="Букмекер 1xBet") Букмекер 1xBet
+				.review-callback__body-form-options-option(data-target="Букмекер Leon") Букмекер Leon
+			.review-callback__body-form-title Ваша оценка
+			.review-callback__body-form-rate
+				.review-callback__body-form-rate-star
+					i.fa.fa-star
+				.review-callback__body-form-rate-star
+					i.fa.fa-star
+				.review-callback__body-form-rate-star
+					i.fa.fa-star
+				.review-callback__body-form-rate-star
+					i.fa.fa-star-o
+				.review-callback__body-form-rate-star
+					i.fa.fa-star-o
+				.review-callback__body-form-rate-number
+					span 3
+					span из 5 звёзд
+			.review-callback__body-form-title Ваш отзыв
+			textarea.review-callback__body-form-textarea(name="text" placeholder="Расскажите о своем опыте работы с данным букмекером")
+			.review-callback__body-form-button
+				button(type="submit") Отправить

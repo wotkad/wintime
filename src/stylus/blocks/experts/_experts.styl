@@ -1,0 +1,310 @@
+#experts .experts
+	margin 20px 0 0 0
+.experts
+	&__text
+		border-radius 15px
+		background $white
+		margin-bottom 20px
+		padding 20px 25px
+		box-shadow 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1)
+		&-title
+			font-family $Bold
+			font-size 1.125rem
+			line-height 24px
+			color $text
+			margin-bottom 15px
+		&-desc
+			font-size 0.75rem
+			font-family $Regular
+			color $text
+			line-height 18px
+	&__blocks
+		padding-top 20px
+		&-block
+			box-shadow 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1)
+			margin-bottom 20px
+			padding 25px
+			border-radius 15px
+			background-color $white
+			&:last-child
+				margin-bottom 0
+			&-header
+				border-bottom 1px solid #f1f1f1
+				padding-bottom 25px
+				display flex
+				align-items center
+				justify-content space-between
+				&-block
+					&:nth-child(1)
+						flex-basis 75%
+						display grid
+						grid-template-columns repeat(11, 1fr)
+						align-items center
+					&:nth-child(2)
+						flex-basis 20%
+						display flex
+						flex-wrap wrap
+						text-align center
+					&-button
+						background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+						box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+						border-radius 25px
+						font-family $Bold
+						padding 11px 21px
+						font-size 0.75rem
+						text-transform uppercase
+						color $white
+						width 100%
+						margin-bottom 9px
+						display inline-block
+						transition .3s
+						border 2px solid transparent
+						&:hover
+							background $white
+							color $purple
+							border 2px solid $purple
+					&-text
+						color #6f6f6f
+						font-family $Regular
+						font-size 0.75rem
+						line-height 14px
+					&-photo
+						grid-row 1 / 3
+						grid-column 1 / 2
+					&-title
+						grid-row 1 / 2
+						grid-column 2 / 12
+						display flex
+						margin-bottom 5px
+						align-items center
+						margin-left 20px
+						&-text
+							& p
+								font-family $Bold
+								font-size 1.125rem
+								line-height 24px
+								color $purple
+								margin-right 8px
+						&-link
+							margin 0 4px
+							width 16px
+							height 16px
+					&-content
+						grid-row 2 / 3
+						grid-column 2 / 12
+						margin-left 20px
+						&-text
+							font-family $Regular
+							font-size 0.75rem
+							line-height 18px
+							color #5a5a5a
+			&-body
+				padding-top 25px
+				&-title
+					font-family $Bold
+					font-size 1.125rem
+					line-height 24px
+					color $text
+					margin-bottom 29px
+				&-table
+					display flex
+					flex-wrap wrap
+					&-item
+						flex-basis 100%
+						display grid
+						grid-template-columns repeat(12, 1fr)
+						padding 15px 0
+						border-bottom 1px solid #f1f1f1
+						&-column
+							display flex
+							align-items center
+							&:nth-child(1)
+								grid-column 1 / 5
+							&:nth-child(2)
+								grid-column 5 / 8
+								padding 0 15px 0 50px
+							&:nth-child(3)
+								grid-column 8 / 11
+								padding 0 15px 0 50px
+								display flex
+								align-items center
+							&:nth-child(4)
+								grid-column 11 / 13
+								justify-content flex-end
+								display flex
+								margin-right 40px
+							&-status
+								border-radius 6px
+								padding 5px 8px
+								display inline-flex
+								align-items center
+								& i
+									margin-top -1px
+									color $white
+								& span
+									margin-left 3px
+									color $white
+									font-family $Regular
+									line-height 13px
+									font-size 0.60rem
+								&-yetnotplayed
+									background-color #666666
+								&-played
+									background-color #2BA600
+								&-notplayed
+									background-color #FA4E4E
+							&-date
+								font-family $SemiBold
+								font-size 0.875rem
+								line-height 17px
+								color #7d7d7d
+							&-link
+								display flex
+								align-items center
+								& i
+									margin-top -1px
+									margin-right 3px
+									color $purple
+									&:nth-child(3)
+										display none
+								& span
+									color $purple
+									font-family $Regular
+									font-size 0.75rem
+									line-height 14px
+							&-title
+								display flex
+								& p
+									&:nth-child(1)
+										font-family $Bold
+										font-size 0.875rem
+										line-height 17px
+										color $text
+									&:nth-child(2)
+										margin-left 20px
+										background-color $purple
+										font-family $Regular
+										font-size 0.60rem
+										line-height 10px
+										padding 5px
+										border-radius 6px
+										color $white
+										display flex
+										align-items center
+										justify-content center
+										& span
+											margin-left 3px
+											font-family $Bold
+			&-footer
+				padding-top 25px
+				display flex
+				justify-content center
+				align-items center
+				&-button
+					background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+					box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+					border-radius 25px
+					font-family $Bold
+					padding 11px 65px
+					font-size 0.75rem
+					text-transform uppercase
+					color $white
+					margin-bottom 9px
+					display flex
+					transition .3s
+					border 2px solid transparent
+					& span
+						margin-left 5px
+					&:hover
+						background $white
+						color $purple
+						border 2px solid $purple
+@media(max-width: 1180px)
+	.experts
+		&__blocks
+			&-block
+				&-body
+					&-table
+						&-item
+							&-column
+								&:nth-child(2)
+									grid-column 1 / 6
+								&:nth-child(2)
+									grid-column 6 / 10
+									padding 0 15px
+								&:nth-child(3)
+									grid-column 10 / 12
+									padding 0 15px
+								&:nth-child(4)
+									grid-column 12 / 13
+								&-link
+									border-radius 50%
+									background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+									width 38px
+									height 38px
+									display flex
+									align-items center
+									justify-content center
+									& span
+										display none
+									& i
+										&:nth-child(1)
+											display none
+										&:nth-child(3)
+											color $white
+											display flex
+											margin-right -2px
+									&:hover
+										border 2px solid $purple
+										background $white
+									&:hover i
+										color $purple
+@media(max-width:680px)
+	.experts
+		&__blocks
+			&-block
+				&-header
+					flex-wrap wrap
+					&-block
+						&:nth-child(1)
+							flex-basis 100%
+							margin-bottom 20px
+						&:nth-child(2)
+							justify-content center
+							flex-basis 100%
+						&-content
+							grid-column 1 / 12
+						&-title
+							flex-wrap wrap
+							&-text
+								flex-basis 100%
+								margin-bottom 10px
+								& p
+									display inline-block
+						&-photo
+							grid-row 1 / 2
+				&-body
+					&-table
+						&-item
+							&-column
+								&:nth-child(1)
+									grid-row 1 / 2
+									grid-column 1 / 11
+									margin-bottom 15px
+								&:nth-child(2)
+									grid-row 2 / 3
+									grid-column 1 / 11
+									padding 0
+									margin-bottom 15px
+								&:nth-child(3)
+									grid-row 3 / 4
+									grid-column 1 / 11
+									padding 0
+								&:nth-child(4)
+									grid-row 1 / 4
+									grid-column 11 / 13
+				&-footer
+					&-button
+						justify-content center
+						padding 11px
+						width 100%

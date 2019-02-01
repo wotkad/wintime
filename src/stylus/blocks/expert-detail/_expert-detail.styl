@@ -1,0 +1,587 @@
+.expert-detail
+	padding-top 20px
+	&__back
+		display none
+		position relative
+		padding 12px
+		border-radius 15px
+		justify-content center
+		align-items center
+		background-color $yellow
+		transition .3s
+		margin-bottom 20px
+		&:hover
+			background-color $white
+		& i
+			color $black
+			font-size 18px
+		& span
+			color $black
+			margin-left 12px
+			font-family $Bold
+			font-size 0.75rem
+			text-transform uppercase
+			line-height 11px
+	&-block
+		box-shadow 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1)
+		margin-bottom 20px
+		padding 25px
+		border-radius 15px
+		background-color $white
+		&:last-child
+			margin-bottom 0
+		&-header
+			display flex
+			align-items center
+			justify-content space-between
+			&-block
+				&:nth-child(1)
+					flex-basis 75%
+					display grid
+					grid-template-columns repeat(11, 1fr)
+					align-items center
+				&:nth-child(2)
+					flex-basis 20%
+					display flex
+					flex-wrap wrap
+					text-align center
+				&-button
+					background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+					box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+					border-radius 25px
+					font-family $Bold
+					padding 11px 21px
+					font-size 0.75rem
+					text-transform uppercase
+					color $white
+					width 100%
+					margin-bottom 9px
+					display inline-block
+					transition .3s
+					border 2px solid transparent
+					&:hover
+						background $white
+						color $purple
+						border 2px solid $purple
+				&-text
+					color #6f6f6f
+					font-family $Regular
+					font-size 0.75rem
+					line-height 14px
+				&-photo
+					grid-row 1 / 3
+					grid-column 1 / 2
+				&-title
+					grid-row 1 / 2
+					grid-column 2 / 12
+					display flex
+					margin-bottom 5px
+					align-items center
+					margin-left 20px
+					&-text
+						& p
+							font-family $Bold
+							font-size 1.125rem
+							line-height 24px
+							color $purple
+							margin-right 8px
+					&-link
+						margin 0 4px
+						width 16px
+						height 16px
+				&-content
+					grid-row 2 / 3
+					grid-column 2 / 12
+					margin-left 20px
+					&-text
+						font-family $Regular
+						font-size 0.75rem
+						line-height 18px
+						color #5a5a5a
+	&-about
+		padding 20px 25px
+		background-color $white
+		border-radius 15px
+		box-shadow 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1)
+		margin-bottom 20px
+		&-title
+			font-family $Bold
+			font-size 1.125rem
+			line-height 24px
+			color $text
+			margin-bottom 15px
+		&-text
+			p
+				font-family $Regular
+				color $text
+				line-height 18px
+				margin-bottom 10px
+				font-size 0.75rem
+	&-filters
+		margin-top 20px
+		background-color $white
+		border-radius 15px
+		padding 14px 25px
+		display flex
+		flex-wrap wrap
+		align-items center
+		justify-content space-between
+		&-title
+			font-family $Bold
+			font-size 1.125rem
+			line-height 24px
+			color $text
+		&-buttons
+			display flex
+			&-button
+				&:nth-child(1)
+					background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+					box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+					border-radius 25px
+					font-family $Bold
+					padding 11px 65px
+					font-size 0.75rem
+					text-transform uppercase
+					color $white
+					display flex
+					transition .3s
+					cursor pointer
+					border 2px solid transparent
+					&:hover
+						background $white
+						color $purple
+						border 2px solid $purple
+				&:nth-child(2)
+					background $white
+					box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+					border-radius 25px
+					font-family $Bold
+					padding 11px 65px
+					cursor pointer
+					font-size 0.75rem
+					text-transform uppercase
+					color $purple
+					margin-left 15px
+					display flex
+					transition .3s
+					border 2px solid $purple
+					& span
+						margin-left 5px
+					&:hover
+						background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+						color $white
+						border 2px solid transparent
+				&:nth-child(3)
+					background $white
+					box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+					border-radius 25px
+					font-family $Bold
+					padding 11px 65px
+					cursor pointer
+					font-size 0.75rem
+					text-transform uppercase
+					color $purple
+					margin-left 15px
+					display flex
+					transition .3s
+					border 2px solid $purple
+					& span
+						margin-left 5px
+					&:hover
+						background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+						color $white
+						border 2px solid transparent
+	&__blocks
+		margin-top 20px
+		margin-bottom 40px
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		.swiper-pagination-bullets
+			display none
+			bottom 0
+		&-block
+			box-shadow 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1)
+			flex-basis calc(33.33334% - 15px)
+			background-color $white
+			border-radius 15px
+			&:nth-child(3n+3)
+				margin-right 0
+			&__body
+				padding 20px 25px
+				height 250px
+				display flex
+				flex-wrap wrap
+				border-radius 15px 15px 0 0
+				&-desc
+					display flex
+					flex-basis 100%
+					flex-wrap wrap
+					height 50px
+					&-item
+						i
+							color $yellow
+							margin-right 5px
+							font-size 0.625rem
+						span
+							color $white
+							font-size 0.625rem
+							margin-right 15px
+							text-transform uppercase
+							font-family $Regular
+				&-titles
+					align-self flex-end
+					flex-basis 100%
+					&-category
+						margin-bottom 10px
+						font-family $Regular
+						color $white
+						text-transform uppercase
+						font-size 0.75rem
+						line-height 14px
+						display flex
+						align-items center
+						i
+							color $yellow
+							margin-right 4px
+					&-title
+						font-size 1.125rem
+						font-family $Bold
+						line-height 24px
+						color $white
+						margin-bottom 6px
+					&-rate
+						&-container
+							background $purple
+							padding 7px 10px
+							display inline-block
+							border-radius 6px
+							span
+								font-size 0.75rem
+								color $white
+								line-height $white
+								&:nth-child(1)
+									font-family $Regular
+								&:nth-child(2)
+									margin-left 3px
+									font-family $Bold
+			&__footer
+				padding 15px 25px
+				display grid
+				grid-template-columns 15% 52% 33%
+				&-photo
+					grid-row 1 / 3
+					height 32px
+					width 32px
+					& img
+						width 100%
+				&-title
+					grid-row 1 / 2
+					font-family $SemiBold
+					font-size 0.875rem
+					color $text
+					line-height 17px
+				&-author
+					grid-row 2 / 3
+					color $text
+					font-family $Regular
+					line-height 18px
+					font-size 0.75rem
+				&-button
+					grid-row 1 / 3
+					display flex
+					align-items center
+					justify-content center
+					border-radius 25px
+					font-family $Bold
+					padding 11px
+					font-size 0.75rem
+					text-transform uppercase
+					color $white
+					box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+					background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+					transition .3s
+					border 2px solid transparent
+					&:hover
+						background $white
+						color $purple
+						border 2px solid $purple
+					i
+						display none
+		&-button
+			margin 20px auto 0 auto
+			&-item
+				background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+				box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+				border-radius 25px
+				font-family $Bold
+				padding 11px 21px
+				font-size 0.75rem
+				text-transform uppercase
+				color $white
+				display inline-block
+				transition .3s
+				border 2px solid transparent
+				&:hover
+					background $white
+					color $purple
+					border 2px solid $purple
+	&__comments
+		margin-top 20px
+		background-color $white
+		border-radius 15px
+		&-titles
+			display flex
+			padding 20px 25px
+			align-items center
+			justify-content space-between
+			border-bottom 1px solid #f1f1f1
+			&-title
+				font-size 1.125rem
+				line-height 24px
+				font-family $Bold
+				color $text
+		&-form
+			padding 25px
+			display flex
+			justify-content space-between
+			border-bottom 1px solid #f1f1f1
+			& input
+				border 1px solid #E1E4E8
+				font-family $Medium
+				font-size 0.75rem
+				line-height 20px
+				color #A6AEBC
+			&-input
+				flex-basis 75%
+				padding 15px
+				border-radius 10px
+			& button
+				width 100%
+			&-button
+				flex-basis 23%
+				background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+				box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+				border-radius 25px
+				font-family $Bold
+				font-size 0.75rem
+				text-transform uppercase
+				color $white
+				display inline-block
+				transition .3s
+				border 2px solid transparent
+				&:hover
+					background $white
+					color $purple
+					border 2px solid $purple
+		&-commentlist
+			padding 15px 0 15px
+			&-item
+				border-bottom 1px solid #f1f1f1
+				padding 15px 25px
+				display grid
+				grid-template-columns repeat(12, 1fr)
+				&:last-child
+					border none
+				&-content
+					display flex
+					height 100%
+					flex-wrap wrap
+					grid-column 1 / 11
+					&-text
+						flex-basis 100%
+						font-family $Regular
+						font-size 0.75rem
+						line-height 18px
+						color $text
+						margin-bottom 10px
+					&-photo
+						flex-basis 100%
+						display flex
+						align-items center
+						& img
+							width 32px
+							height 32px
+						&-title
+							font-family $SemiBold
+							font-size 0.875rem
+							line-height 17px
+							color $text
+							margin-left 16px
+				&-info
+					grid-column 11 / 13
+					display flex
+					height 100%
+					flex-wrap wrap
+					justify-content flex-end
+					&-date
+						flex-basis 100%
+						font-size 0.75rem
+						line-height 18px
+						font-family $Regular
+						color $sidebarlink
+						text-align right
+					&-likes
+						justify-content flex-end
+						flex-basis 100%
+						display flex
+						align-items flex-end
+						&-dislike
+							& span
+								font-family $Regular
+								font-size 0.75rem
+								color $sidebarlink
+								margin-left 5px
+								line-height 19px
+							& i
+								color #fa4e4e
+						&-like
+							margin-left 15px
+							& span
+								font-family $Regular
+								font-size 0.75rem
+								color $sidebarlink
+								margin-left 5px
+								line-height 19px
+							& i
+								color #22c993
+@media(max-width: 1300px)
+	.expert-detail
+		&__blocks
+			&-block
+				&__footer
+					grid-template-columns 15% 70% 15%
+					&-title
+						padding-left 5px
+					&-author
+						padding-left 5px
+					&-button
+						width 38px
+						height 38px
+						p
+							display none
+						i
+							font-size 15px
+							margin-top -2px
+							margin-right -2px
+							display flex
+@media(max-width: 1140px)
+	.expert-detail
+		&__blocks
+			.swiper-container-expert-detail
+				.swiper-wrapper
+					padding-bottom 30px
+				.swiper-pagination-bullets
+					display block
+			&-block
+				flex-basis calc(50% - 15px)
+				&:nth-child(2n+2)
+					margin-right 0
+				&__footer
+					position relative
+					&-button
+						position absolute
+						right 25px
+			&-button
+				&-item
+					padding 11px 111px
+@media(max-width: 991px)
+	.expert-detail
+		&__back
+			display flex
+		&__blocks
+			&-button
+				display none
+@media(max-width: 933px)
+	.expert-detail
+		&-filters
+			&-title
+				flex-basis 100%
+				margin-bottom 15px
+			&-buttons
+				flex-basis 100%
+				justify-content space-between
+		&__blocks
+			&-block
+				flex-basis 100%
+				margin-right 0
+@media(max-width: 768px)
+	.expert-detail
+		&__blocks
+			&-block
+				flex-basis calc(50% - 15px)
+@media(max-width:680px)
+	.expert-detail
+		&__comments
+			&-titles
+				flex-wrap wrap
+				padding-bottom 25px
+				&-title
+					flex-basis 100%
+					margin-bottom 15px
+			&-form
+				flex-wrap wrap
+				&-input
+					flex-basis 100%
+					margin-bottom 15px
+				&-button
+					flex-basis 100%
+					padding 16px
+			&-commentlist
+				&-item
+					&-content
+						grid-column 1 / 13
+						grid-row 2 / 3
+					&-info
+						grid-column 1 / 13
+						grid-row 1 / 2
+						flex-wrap nowrap
+						margin-bottom 10px
+						&-date
+							text-align left
+						&-likes
+							align-items flex-start
+		&-filters
+			&-buttons
+				&-button
+					&:nth-child(1)
+						padding 11px
+					&:nth-child(2)
+						padding 11px
+					&:nth-child(3)
+						padding 11px
+		&-block
+			&-header
+				flex-wrap wrap
+				&-block
+					&:nth-child(1)
+						flex-basis 100%
+						margin-bottom 20px
+					&:nth-child(2)
+						justify-content center
+						flex-basis 100%
+					&-content
+						grid-column 1 / 12
+					&-title
+						flex-wrap wrap
+						&-text
+							flex-basis 100%
+							margin-bottom 10px
+							& p
+								display inline-block
+					&-photo
+						grid-row 1 / 2
+@media(max-width: 650px)
+	.expert-detail
+		&__blocks
+			&-block
+				flex-basis 100%
+				margin-right 0
+				&__footer
+					position relative
+					&-button
+						position relative
+						right auto
+			&-button
+				&-item
+					padding 11px 47px

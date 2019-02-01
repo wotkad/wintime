@@ -1,0 +1,92 @@
+.experts
+	margin 20px 0
+	.swiper-pagination-bullets
+		display none
+		bottom 0
+	&__titles
+		background-color $white
+		border-radius 15px 15px 0 0
+		display flex
+		padding 25px
+		justify-content space-between
+		align-items center
+		border-bottom 1px solid #f1f1f1
+		box-shadow 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1)
+		&-title
+			font-family $Bold
+			font-size 1.125rem
+			color $text
+			line-height 24px
+	&__slider
+		background-color $white
+		position relative
+		box-shadow 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1)
+		border-radius 0 0 15px 15px
+		&-item
+			padding 20px
+			border-right 1px solid #f1f1f1
+			&__header
+				display grid
+				grid-template-columns 33% 67%
+				margin-bottom 17px
+				&-img
+					grid-column 1 / 2
+					grid-row 1 / 3
+					height 72px
+					width 72px
+				&-title
+					grid-column 2 / 3
+					&-text
+						font-family $Bold
+						font-size 1.125rem
+						line-height 24px
+						display inline-block
+						color $purple
+						border-bottom 1px dashed rgba(84, 53, 124, 0.2)
+						padding-bottom 3px
+						margin-bottom 10px
+				&-desc
+					grid-column 2 / 3
+					font-family $Regular
+					font-size 0.75rem
+					color #5a5a5a
+					line-height 18px
+			&__body
+				display flex
+				justify-content space-between
+				&-item
+					border-bottom 1px dashed rgba(84, 53, 124, 0.2)
+					transition .3s
+					&:hover
+						border-color $purple
+					&:nth-child(1)
+						margin-right 25px
+					& i
+						color $purple
+					span
+						&:nth-child(2)
+							font-family $Regular
+							font-size 0.75rem
+							line-height 14px
+							color $text
+							margin 0 5px
+						&:nth-child(3)
+							font-family $Bold
+							font-size 0.75rem
+							line-height 14px
+							color $text
+@media(max-width: 1240px)
+	.experts
+		&__slider
+			.swiper-container-experts
+				.swiper-wrapper
+					padding-bottom 30px
+		.swiper-pagination
+			display flex
+			justify-content center
+			position relative
+			padding 30px 0 10px
+			display block
+			.swiper-pagination-bullet
+				margin 0 4px
+

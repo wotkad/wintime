@@ -1,0 +1,188 @@
+.knowledge-single {
+  margin-top: 30px;
+}
+.knowledge-single__content {
+  padding: 25px 25px 10px 25px;
+  background-color: $white;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  margin-bottom: 20px;
+}
+.knowledge-single__content h1 {
+  margin-bottom: 20px;
+  font-family: $Bold;
+  font-size: 1.125rem;
+  line-height: 24px;
+  color: $text;
+}
+.knowledge-single__content h2 {
+  margin-bottom: 20px;
+  font-size: 0.825rem;
+  color: $text;
+  font-family: $SemiBold;
+  line-height: 19px;
+}
+.knowledge-single__content h3 {
+  margin-bottom: 20px;
+  font-size: 0.75rem;
+  color: $text;
+  font-family: $SemiBold;
+  line-height: 16px;
+}
+.knowledge-single__content ol {
+  margin-bottom: 20px;
+  color: $purple;
+  font-family: $SemiBold;
+}
+.knowledge-single__content ol li {
+  margin-bottom: 10px;
+  color: $text;
+  font-family: $Medium;
+  padding-left: 5px;
+  margin-left: 20px;
+  font-size: 0.75rem;
+  line-height: 18px;
+}
+.knowledge-single__content ul {
+  margin-bottom: 20px;
+  color: $purple;
+  font-family: $SemiBold;
+}
+.knowledge-single__content ul li {
+  margin-bottom: 10px;
+  color: $text;
+  margin-left: 20px;
+  padding-left: 5px;
+  font-family: $Medium;
+  font-size: 0.75rem;
+  line-height: 18px;
+}
+.knowledge-single__content p {
+  font-family: $Regular;
+  font-size: 0.75rem;
+  line-height: 18px;
+  color: $text;
+  margin-bottom: 20px;
+}
+.knowledge-single__content blockquote {
+  border: 1px solid $purple;
+  padding: 20px 40px;
+  color: $text;
+  font-family: $Italic;
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.knowledge-single__content blockquote:before {
+  content: '\f10e';
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  color: $purple;
+  display: inline-block;
+  font: normal normal normal 32px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.knowledge-single__back {
+  display: none;
+  position: relative;
+  padding: 12px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: $yellow;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+.knowledge-single__back:hover {
+  background-color: $white;
+}
+.knowledge-single__back i {
+  color: $black;
+  font-size: 18px;
+}
+.knowledge-single__back span {
+  color: $black;
+  margin-left: 12px;
+  font-family: $Bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  line-height: 11px;
+}
+.knowledge-single__related {
+  background-color: $white;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  margin-top: 20px;
+}
+.knowledge-single__related-title p {
+  padding: 25px;
+  font-family: $Bold;
+  font-size: 1.125rem;
+  line-height: 24px;
+  color: $text;
+  border-bottom: 1px solid #f1f1f1;
+}
+.knowledge-single__related__items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 25px;
+}
+.knowledge-single__related__items-item {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  margin-bottom: 12px;
+}
+.knowledge-single__related__items-item p {
+  display: inline-block;
+  font-family: $Regular;
+  font-size: 0.825rem;
+  line-height: 21px;
+  color: #9d9d9d;
+}
+.knowledge-single__related__items-item p span {
+  margin-left: 4px;
+  font-family: $Regular;
+  border-bottom: 1px dashed rgba(84,53,124,0.4);
+  font-size: 0.825rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  line-height: 21px;
+  color: $text;
+}
+.knowledge-single__related__items-item:hover p span {
+  border-color: $purple;
+}
+@media (max-width: 991px) {
+  .knowledge-single__back {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .knowledge-single__related__items-item {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+}

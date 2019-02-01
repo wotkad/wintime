@@ -1,0 +1,201 @@
+.knowledgebase
+	margin-top 30px
+	&__form
+		display flex
+		justify-content space-between
+		padding 30px 25px
+		border-radius 15px
+		background-color $white
+		margin-bottom 20px
+		margin-top 20px
+		position relative
+		&-img
+			position absolute
+			top calc(50% - 9px)
+			left 47px
+			& svg path
+				fill $purple
+		&-input
+			width 100%
+		&-button
+			flex-basis 23%
+			margin-left 30px
+			display flex
+			align-items center
+			justify-content center
+			border-radius 25px
+			font-family $Bold
+			padding 11px
+			font-size 0.75rem
+			text-transform uppercase
+			color $white
+			box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+			background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+			transition .3s
+			border 2px solid transparent
+			cursor pointer
+			&:hover
+				background $white
+				color $purple
+				border 2px solid $purple
+			& span
+				display block
+			& i
+				display none
+		& input
+			font-family $Regular
+			font-size 0.625rem
+			color $text
+			line-height 12px
+			text-transform uppercase
+			padding 13px 60px
+			border 1px solid rgba(84, 53, 124, 0.6)
+			border-radius 30px
+			background transparent
+	&__text
+		border-radius 15px
+		background $white
+		margin-bottom 20px
+		padding 20px 25px
+		box-shadow 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1)
+		&-title
+			font-family $Bold
+			font-size 1.125rem
+			line-height 24px
+			color $text
+			margin-bottom 15px
+		&-desc
+			font-size 0.75rem
+			font-family $Regular
+			color $text
+			line-height 18px
+	&__blocks
+		display flex
+		margin-top 20px
+		justify-content space-between
+		flex-wrap wrap
+		&-block
+			display flex
+			border-radius 15px
+			flex-basis calc(33.33334% - 15px)
+			margin-right 20px
+			background-color $white
+			margin-bottom 20px
+			flex-direction column
+			max-height 400.3px
+			&-active
+				max-height 100%
+				.knowledgebase__blocks-block-button
+					& div
+						& span
+							&:nth-child(2)
+								display none
+							&:nth-child(3)
+								display block
+			&:nth-child(3n+3)
+				margin-right 0
+			&-title
+				border-bottom 1px solid #f1f1f1
+				padding 25px
+				flex-shrink 10
+				flex-basis 100%
+				& span
+					font-family $Bold
+					line-height 24px
+					font-size 1.125rem
+					color $text
+			&-posts
+				flex-basis 100%
+				padding 20px 25px 0px 25px
+				overflow hidden
+				max-height 263.3px
+				margin-bottom 17px
+				position relative
+				&-active
+					max-height 100%
+					.knowledgebase__blocks-block-posts-shadow
+						display none
+				&-shadow
+					background linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 89.6%)
+					position absolute
+					bottom 0px
+					left 0
+					width 100%
+					height 140px
+				&-post
+					margin-bottom 12px
+					display block
+					& p
+						display inline-block
+						font-size 0.875rem
+						font-family $Regular
+						line-height 20px
+						color $text
+						& span
+							margin-left 3px
+							padding-bottom 2px
+							border-bottom 1px dashed rgba(84, 53, 124, 0.4)
+			&-button
+				padding 0 25px 25px 25px
+				display flex
+				align-items flex-end
+				flex-shrink 1
+				& div
+					border-bottom 1px dashed rgba(84, 53, 124, 0.4)
+					cursor pointer
+					display flex
+					& span
+						color $purple
+						font-family $Regular
+						font-size 0.75rem
+						text-transform uppercase
+						padding-bottom 2px
+						line-height 14px
+						margin-left 4px
+						&:nth-child(2)
+							display block
+						&:nth-child(3)
+							display none
+					& i
+						color $purple
+						font-size 14px
+						transition .3s
+				&:hover div i
+					transform rotate(180deg)
+@media(max-width: 1140px)
+	.knowledgebase
+		&__blocks
+			&-block
+				flex-basis calc(50% - 10px)
+				&:nth-child(3n+3)
+					margin-right 15px
+				&:nth-child(2n+2)
+					margin-right 0
+@media(max-width: 650px)
+	.knowledgebase
+		&__blocks
+			&-block
+				flex-basis 100%
+				margin-right 0
+				&:nth-child(3n+3)
+					margin-right 0
+				&:nth-child(2n+2)
+					margin-right 0
+		&__form
+			&-img
+				left 42px
+			& input
+				padding 13px 0 13px 40px
+			&-button
+				margin-left 25px
+				max-width 48px
+				display flex
+				align-items center
+				justify-content center
+				max-height 48px
+				& span
+					display none
+				& i
+					display block
+					font-size 20px
+					margin-top -2px

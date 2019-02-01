@@ -1,0 +1,394 @@
+.bookmakers {
+  margin: 20px 0;
+}
+.bookmakers__titles {
+  background-color: $white;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 12px 18px rgba(90,62,126,0.05), 0px 0px 1px rgba(10,31,68,0.1);
+          box-shadow: 0px 12px 18px rgba(90,62,126,0.05), 0px 0px 1px rgba(10,31,68,0.1);
+}
+.bookmakers__titles-title {
+  font-family: $Bold;
+  font-size: 1.125rem;
+  color: $text;
+  line-height: 24px;
+}
+.bookmakers__titles-button {
+  background: -webkit-linear-gradient(291.11deg, #9537a5 25.2%, #7140b3 79.4%);
+  background: -o-linear-gradient(291.11deg, #9537a5 25.2%, #7140b3 79.4%);
+  background: linear-gradient(158.89deg, #9537a5 25.2%, #7140b3 79.4%);
+  -webkit-box-shadow: 0px 4px 20px rgba(84,53,124,0.3);
+          box-shadow: 0px 4px 20px rgba(84,53,124,0.3);
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  font-family: $Bold;
+  padding: 11px 21px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: $white;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+.bookmakers__titles-button:hover {
+  background: $white;
+  color: $purple;
+  border: 2px solid $purple;
+}
+.bookmakers__titles-button i {
+  display: none;
+}
+.bookmakers__blocks {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 12px 18px rgba(90,62,126,0.05), 0px 0px 1px rgba(10,31,68,0.1);
+          box-shadow: 0px 12px 18px rgba(90,62,126,0.05), 0px 0px 1px rgba(10,31,68,0.1);
+}
+.bookmakers__blocks-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.bookmakers__blocks-block:nth-child(1) {
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
+  -webkit-border-radius: 15px 0 0 15px;
+          border-radius: 15px 0 0 15px;
+}
+.bookmakers__blocks-block:nth-child(2) {
+  -webkit-flex-basis: 80%;
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%;
+  padding: 20px 30px;
+  -webkit-border-radius: 0 15px 15px 0;
+          border-radius: 0 15px 15px 0;
+  background-color: $white;
+}
+.bookmakers__blocks-block__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+.bookmakers__blocks-block__header-button {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+.bookmakers__blocks-block__header-button:nth-child(1) .bookmakers__blocks-block__header-button-item {
+  border: 2px solid $purple;
+  -webkit-box-shadow: 0px 4px 20px rgba(84,53,124,0.3);
+          box-shadow: 0px 4px 20px rgba(84,53,124,0.3);
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  font-family: $Bold;
+  padding: 11px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: $purple;
+  text-align: center;
+  margin-right: 15px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.bookmakers__blocks-block__header-button:nth-child(1) .bookmakers__blocks-block__header-button-item:hover {
+  background: -webkit-linear-gradient(291.11deg, #9537a5 25.2%, #7140b3 79.4%);
+  background: -o-linear-gradient(291.11deg, #9537a5 25.2%, #7140b3 79.4%);
+  background: linear-gradient(158.89deg, #9537a5 25.2%, #7140b3 79.4%);
+  color: $white;
+  border: 2px solid transparent;
+}
+.bookmakers__blocks-block__header-button:nth-child(2) .bookmakers__blocks-block__header-button-item {
+  background: -webkit-linear-gradient(291.11deg, #9537a5 25.2%, #7140b3 79.4%);
+  background: -o-linear-gradient(291.11deg, #9537a5 25.2%, #7140b3 79.4%);
+  background: linear-gradient(158.89deg, #9537a5 25.2%, #7140b3 79.4%);
+  -webkit-box-shadow: 0px 4px 20px rgba(84,53,124,0.3);
+          box-shadow: 0px 4px 20px rgba(84,53,124,0.3);
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  font-family: $Bold;
+  padding: 11px;
+  text-align: center;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: $white;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+.bookmakers__blocks-block__header-button:nth-child(2) .bookmakers__blocks-block__header-button-item:hover {
+  background: none;
+  color: $purple;
+  border: 2px solid $purple;
+}
+.bookmakers__blocks-block__header:nth-child(1) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.bookmakers__blocks-block__header:nth-child(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bookmakers__blocks-block__header-title {
+  font-size: 1.125rem;
+  line-height: 24px;
+  margin-bottom: 5px;
+  color: $text;
+  font-family: $Bold;
+  grid-column: 1/2;
+}
+.bookmakers__blocks-block__header-desc {
+  font-family: $Regular;
+  color: #d6d6d6;
+  line-height: 24px;
+  font-size: 1.125rem;
+}
+.bookmakers__blocks-block__header-rate {
+  margin-top: 10px;
+  color: $text;
+  font-family: $Regular;
+  line-height: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 15px;
+  grid-column: 1/2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bookmakers__blocks-block__header-rate span {
+  margin-right: 5px;
+}
+.bookmakers__blocks-block__header-rate i {
+  color: #fad94e;
+  margin: 0 2px;
+}
+.bookmakers__blocks-block__header-prize {
+  height: 50px;
+  width: 50px;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.bookmakers__blocks-block__header-prize-bg {
+  background-color: $purple;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  top: 0;
+  -webkit-border-radius: 16px;
+          border-radius: 16px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bookmakers__blocks-block__header-prize span {
+  z-index: 3;
+  position: relative;
+  color: $white;
+  font-size: 0.625rem;
+  line-height: 10px;
+  font-family: $Regular;
+}
+.bookmakers__blocks-block__header-prize span:nth-child(3) {
+  margin: 2px 0;
+  color: $yellow;
+  font-family: $Bold;
+  font-size: 0.75rem;
+  line-height: 14px;
+}
+.bookmakers__blocks-block__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 10px;
+}
+.bookmakers__blocks-block__body-item {
+  -webkit-flex-basis: 40%;
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bookmakers__blocks-block__body-item i {
+  font-size: 0.825rem;
+  color: $yellow;
+  margin-right: 10px;
+}
+.bookmakers__blocks-block__body-item span {
+  font-family: $SemiBold;
+  font-size: 0.75rem;
+  line-height: 18px;
+  color: $text;
+}
+@media (max-width: 1220px) {
+  .bookmakers__blocks-block:nth-child(1) {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+  }
+  .bookmakers__blocks-block:nth-child(2) {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+  }
+  .bookmakers__blocks-block__body {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .bookmakers__blocks-block__body-item {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+  .bookmakers__blocks-block__header {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+  .bookmakers__blocks-block__header:nth-child(2) {
+    margin-top: 21px;
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+@media (max-width: 991px) {
+  .bookmakers__blocks {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .bookmakers__blocks-block:nth-child(1) {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    height: 200px;
+    -webkit-border-radius: 15px 15px 0 0;
+            border-radius: 15px 15px 0 0;
+  }
+  .bookmakers__blocks-block:nth-child(2) {
+    -webkit-border-radius: 0 0 15px 15px;
+            border-radius: 0 0 15px 15px;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .bookmakers__blocks-block:nth-child(1) {
+    height: 100px;
+  }
+  .bookmakers__blocks-block:nth-child(2) {
+    padding: 10px 20px 27px;
+  }
+}
+@media (max-width: 500px) {
+  .bookmakers__titles-button {
+    width: 38px;
+    height: 38px;
+    padding: 9px 15px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bookmakers__titles-button p {
+    display: none;
+  }
+  .bookmakers__titles-button i {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}

@@ -1,0 +1,578 @@
+.header
+	position fixed
+	width 100%
+	height 40px
+	top 0
+	left 0
+	z-index 10000
+	background-color $header
+	display flex
+	padding 0 0 0 30px
+	justify-content space-between
+	&__logo
+		display flex
+		align-items center
+		justify-content center
+		&-text
+			font-family $Regular
+			font-size 0.625rem
+			color $white
+			text-transform uppercase
+			font-size 0.75rem
+			line-height 14px
+	&__items
+		display flex
+		&-item
+			display flex
+			align-items center
+			justify-content center
+			padding 0 15px
+			transition .3s
+			&-text
+				font-family $Regular
+				font-size 0.625rem
+				color $white
+				text-transform uppercase
+		&-link
+			display flex
+			align-items center
+			justify-content center
+			padding 0 15px
+			transition .3s
+			&-img
+				margin-right 8px
+				display flex
+				align-items center
+			&-text
+				font-family $Regular
+				font-size 0.625rem
+				color $white
+			&:last-child
+				padding-right 30px
+			&:hover
+				background-color $headertextactive
+.menu
+	position fixed
+	width 100%
+	top 40px
+	left 0
+	z-index 10000
+	box-shadow 0px 4px 30px rgba(0, 0, 0, 0.1)
+	height 90px
+	background-color $header2
+	&-bg
+		background url(/images/menu-bg.svg) 50% 50%
+		background-size cover
+		height 100%
+	&__items
+		display flex
+		justify-content space-between
+		position absolute
+		top 0
+		width 100%
+		height 90px
+		align-items center
+		padding 0 30px
+		&-item
+			position relative
+			display flex
+			align-items center
+			&:nth-child(4)
+				display none
+			&__container
+				border-radius 8px
+				background-color $white
+				position absolute
+				right 0
+				box-shadow 0px 12px 18px rgba(90, 62, 126, 0.2), 0px 0px 1px rgba(10, 31, 68, 0.1)
+				bottom -120px
+				max-width 284px
+				min-width 284px
+				display none
+				flex-wrap wrap
+				&-active
+					display flex
+				&-title
+					flex-basis 100%
+					color $yellow
+					font-family $Bold
+					font-size 0.625rem
+					border-radius 7px 7px 0 0
+					line-height 11px
+					padding 15px 20px
+					background-color $text
+				&-links
+					display flex
+					padding 15px 20px
+					flex-wrap wrap
+					&-link
+						cursor pointer
+						font-family $SemiBold
+						font-size 0.625rem
+						line-height 13px
+						color $text
+						flex-basis 100%
+						margin-bottom 10px
+						transition .3s
+						&:hover
+							color $purple
+						&:last-child
+							margin-bottom 0
+			&-logo
+				height 70px
+				width 70px
+				&-text
+					display flex
+					align-items center
+					span
+						font-family $SemiBold
+						font-size 2rem
+						line-height 38px
+			&-text
+				display flex
+				align-items center
+				span
+					font-family $SemiBold
+					font-size 2rem
+					line-height 38px
+					&:nth-child(1)
+						color $white
+						margin-left 20px
+					&:nth-child(2)
+						color $headeryellowtext
+					&:nth-child(3)
+						margin-left 20px
+						font-size 0.625rem
+						color $white
+						text-transform uppercase
+						line-height 15px
+						flex-basis 33%
+			&__menu
+				display flex
+				align-items center
+				&-item
+					display flex
+					align-items center
+					justify-content center
+					flex-direction column
+					height 90px
+					padding 0 17px
+					margin 0 5px
+					transition .3s
+					border-bottom 3px solid transparent
+					&-img
+						margin-bottom 6.5px
+						opacity .7
+						& svg path
+							transition .3s
+					&-text
+						font-family $Bold
+						font-size 0.625rem
+						color $white
+						opacity .7
+						line-height 12px
+						transition .3s
+					&:hover
+						border-bottom 3px solid $headeryellowborder
+					&:hover &-text
+						opacity 1
+						color $headeryellowtext
+					&:hover &-img
+						opacity 1
+					&:hover &-img svg path
+						fill $headeryellowsvg
+			&-search
+				position relative
+				margin-right 30px
+				&-img
+					position absolute
+					top 11px
+					left 20px
+				& input
+					font-family $Regular
+					font-size 0.625rem
+					color $white
+					line-height 12px
+					text-transform uppercase
+					padding 13px 60px
+					border 1px solid rgba(255, 255, 255, 0.3)
+					border-radius 30px
+					background transparent
+			&-login
+				position relative
+				border-radius 50%
+				transition .3s
+				&-img
+					display flex
+					align-items center
+					justify-content center
+				&-count
+					display flex
+					align-items center
+					justify-content center
+					position absolute
+					top 0
+					right 0
+					background #FA4E4E
+					border-radius 50%
+					width 15px
+					height 15px
+					font-family $Bold
+					color $white
+					line-height 10px
+					font-size 0.5rem
+				&:hover
+					box-shadow 0px -4px 20px rgba(250, 217, 78, 0.3)
+.search
+	position absolute
+	top 0
+	left 0
+	width 100%
+	background-color rgba(0, 0, 0, 0.8)
+	z-index 10001
+	padding 25px 0
+	display flex
+	align-items center
+	justify-content center
+	transition .5s
+	transform: translateY(-100%)
+	&__active
+		transform: translateY(0%)
+		transition .5s
+	&__container
+		width 80%
+		&-title
+			text-align center
+			font-family $Bold
+			font-size 0.875rem
+			color $white
+			margin-bottom 22px
+			line-height 18px
+		&-form
+			position relative
+			display flex
+			&-input
+				font-family $Regular
+				padding 0 50px 0 20px
+				font-size 1.125rem
+				line-height 18px
+				background-color $white
+				border-radius 30px
+				height 40px
+				border none
+				width 100%
+			& button
+				cursor pointer
+				position absolute
+				top calc(50% - 8px)
+				right 50px
+				background none
+				border none
+				width 19px
+				& svg path
+					transition .3s
+				&:hover svg path
+					fill $yellow
+		&-close
+			cursor pointer
+			margin-left 18px
+			display flex
+			align-items center
+			& svg path
+				transition .3s
+			&:hover svg path
+				fill $yellow
+.mobmenu
+	z-index -1
+	visibility hidden
+	position absolute
+	overflow-y auto
+	transition .3s
+@media(max-width: 1400px)
+	.menu
+		&__items
+			&-item
+				&:nth-child(1)
+					flex-basis 27%
+				&-text
+					flex-wrap wrap
+					& span
+						&:nth-child(3)
+							flex-basis 100%
+@media(max-width: 1220px)
+	.menu
+		&__items
+			&-item
+				&-search
+					&-img
+						position relative
+						cursor pointer
+						top auto
+						left auto
+						& svg path
+							transition .3s
+						&:hover svg path
+							fill $yellow
+					& input
+						display none
+@media(max-width: 991px)
+	.menu
+		&__items
+			&-item
+				&__container
+					bottom -140px
+				&-search
+					right 60px
+					position absolute
+					margin 0
+				&-login
+					position absolute
+					right 0
+				&-text
+					flex-basis 50%
+				&:nth-child(1)
+					flex-basis auto
+					justify-content center
+					order 2
+				&:nth-child(2)
+					display none
+				&:nth-child(3)
+					order 3
+					flex-basis 20%
+				&:nth-child(4)
+					display block
+					order 1
+					flex-basis 20%
+				&-button
+					cursor pointer
+					display inline-block
+					& svg path
+						transition .3s
+					&:hover svg path
+						fill $yellow
+	.mobmenu
+		top 130px
+		width 100%
+		height calc(100% - 130px)
+		left 0
+		bottom 0
+		&__active
+			visibility visible
+			z-index 9999
+		&-bg
+			position fixed
+			top 130px
+			left 0
+			bottom 0
+			width 100%
+			height calc(100% - 130px)
+			z-index 11
+			background-color rgba(0, 0, 0, 0.8)
+		&__items
+			position relative
+			z-index 12
+			background-color $white
+			margin 30px 30px 10px 30px
+			border-radius 10px
+			&-item
+				display flex
+				align-items center
+				justify-content center
+				border-bottom 1px solid #E3E3E3
+				transition .3s
+				position relative
+				&-arrow
+					transition .3s
+					position absolute
+					right 20px
+					top calc(50% - 8px)
+					& i
+						color $purple
+						transition .3s
+				&-content
+					transition .3s
+					height 0
+					overflow hidden
+					&-item
+						display flex
+						align-items center
+						justify-content center
+						background-color #F3F3F3
+						border-bottom 1px solid #E3E3E3
+						transition .3s
+						padding 5px 10px
+						color $text
+						font-family $SemiBold
+						line-height 22px
+						font-size 1rem
+						&:hover
+							color rgba(84, 53, 124, 0.3)
+				&:first-child
+					border-radius 8px 8px 0 0
+				&:last-child
+					border-bottom none
+					border-radius 0 0 8px 8px
+				&-image
+					& svg path
+						transition .3s
+				&-image svg
+					height 34px
+					width 34px
+				&-title
+					font-size 1.5rem
+					color $purple
+					line-height 29px
+					transition .3s
+					font-family $Bold
+					padding 20px
+				&:hover
+					background-color $purple
+				&:hover &-title
+					color $white
+				&:hover &-image svg path
+					fill $white
+				&:hover &-arrow
+					& i
+						color $white
+				.open &-content
+					height auto
+					overflow visible
+				.open &-arrow
+					transform rotate(180deg)
+			&-item.open
+				background-color $purple
+				color $white
+			&-item.open
+				.mobmenu__items-item-image svg path
+					fill $white
+			&-item.open
+				.mobmenu__items-item-title
+					color $white
+			&-item.open
+				.mobmenu__items-item-arrow
+					& i
+						color $white
+		&__callback
+			position relative
+			z-index 12
+			cursor pointer
+			background-color $white
+			margin 0px 30px 10px 30px
+			border-radius 10px
+			transition .3s
+			&-button
+				display flex
+				align-items center
+				justify-content center
+				& i
+					color $purple
+					transition .3s
+				& span
+					margin-left 5px
+					font-size 0.875rem
+					color $purble
+					line-height 17px
+					transition .3s
+					text-transform uppercase
+					font-family $Regular
+					padding 16px 16px 16px 0
+			&:hover
+				background-color $purple
+			&:hover i
+				color $white
+			&:hover span
+				color $white
+		&__close
+			position relative
+			cursor pointer
+			z-index 12
+			background-color $purple
+			margin 0px 30px 30px 30px
+			border-radius 10px
+			transition .3s
+			&-button
+				display flex
+				align-items center
+				justify-content center
+				& i
+					color $yellow
+					transition .3s
+				& span
+					margin-left 5px
+					font-size 0.875rem
+					color $white
+					line-height 17px
+					transition .3s
+					text-transform uppercase
+					font-family $Regular
+					padding 16px 16px 16px 0
+			&:hover
+				background-color $white
+			&:hover i
+				color $purple
+			&:hover span
+				color $purple
+@media(max-width: 768px)
+	.header
+		padding-left 15px
+		&__items
+			width 100%
+			&-link
+				&:last-child
+					position absolute
+					height 40px
+					right 0
+		&__logo
+			display none
+	.mobmenu
+		&__items
+			&-item
+				&-image svg
+					height 28px
+					width 28px
+				&-title
+					font-size 1.125rem
+					line-height 22px
+					span
+						padding 16px 0
+@media(max-width: 561px)
+	.header
+		&__items
+			&-item
+				display none
+			&-link
+				display flex
+				align-items center
+				justify-content center
+				padding 0 12.5px
+				&-img
+					margin-right 0
+				&-text
+					display none
+				&:last-child &-text
+					display block
+	.mobmenu
+		top 116px
+		height calc(100vh - 116px)
+		&-bg
+			top 116px
+			height calc(100vh - 116px)
+		&__items
+			margin-top 20px
+			&-item
+				&-image svg
+					height 24px
+					width 24px
+				&-title
+					font-size 0.875rem
+					line-height 16px
+					padding 16px 14px
+		&__close
+			margin-bottom 10px
+	.menu
+		height 76px
+		&__items
+			height 76px
+			&-item
+				&-text
+					display none

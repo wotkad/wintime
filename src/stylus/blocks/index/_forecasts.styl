@@ -1,0 +1,222 @@
+.is-index
+	margin-bottom 40px
+.forecasts-tags
+	margin-top 30px
+	.separator
+		margin-bottom 20px
+	&__text
+		border-radius 15px
+		background $white
+		margin-bottom 20px
+		padding 20px 25px
+		box-shadow 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1)
+		&-title
+			font-family $Bold
+			font-size 1.125rem
+			line-height 24px
+			color $text
+			margin-bottom 15px
+		&-desc
+			font-size 0.75rem
+			font-family $Regular
+			color $text
+			line-height 18px
+	&__blocks
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		.swiper-pagination-bullets
+			display none
+			bottom 0
+		&-block
+			box-shadow 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1)
+			margin-bottom 20px
+			flex-basis calc(33.33334% - 15px)
+			background-color $white
+			border-radius 15px
+			&:nth-child(3n+3)
+				margin-right 0
+			&__body
+				padding 20px 25px
+				height 250px
+				display flex
+				flex-wrap wrap
+				border-radius 15px 15px 0 0
+				&-desc
+					display flex
+					flex-basis 100%
+					flex-wrap wrap
+					height 50px
+					&-item
+						i
+							color $yellow
+							margin-right 5px
+							font-size 0.625rem
+						span
+							color $white
+							font-size 0.625rem
+							margin-right 15px
+							text-transform uppercase
+							font-family $Regular
+				&-titles
+					align-self flex-end
+					flex-basis 100%
+					&-category
+						margin-bottom 10px
+						font-family $Regular
+						color $white
+						text-transform uppercase
+						font-size 0.75rem
+						line-height 14px
+						display flex
+						align-items center
+						i
+							color $yellow
+							margin-right 4px
+					&-title
+						font-size 1.125rem
+						font-family $Bold
+						line-height 24px
+						color $white
+						margin-bottom 6px
+					&-rate
+						&-container
+							background $purple
+							padding 7px 10px
+							display inline-block
+							border-radius 6px
+							span
+								font-size 0.75rem
+								color $white
+								line-height $white
+								&:nth-child(1)
+									font-family $Regular
+								&:nth-child(2)
+									margin-left 3px
+									font-family $Bold
+			&__footer
+				padding 15px 25px
+				display grid
+				grid-template-columns 15% 52% 33%
+				&-photo
+					grid-row 1 / 3
+					height 32px
+					width 32px
+					& img
+						width 100%
+				&-title
+					grid-row 1 / 2
+					font-family $SemiBold
+					font-size 0.875rem
+					color $text
+					line-height 17px
+				&-author
+					grid-row 2 / 3
+					color $text
+					font-family $Regular
+					line-height 18px
+					font-size 0.75rem
+				&-button
+					grid-row 1 / 3
+					display flex
+					align-items center
+					justify-content center
+					border-radius 25px
+					font-family $Bold
+					padding 11px
+					font-size 0.75rem
+					text-transform uppercase
+					color $white
+					box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+					background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+					transition .3s
+					border 2px solid transparent
+					&:hover
+						background $white
+						color $purple
+						border 2px solid $purple
+					i
+						display none
+		&-button
+			margin 20px auto 0 auto
+			&-item
+				background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+				box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+				border-radius 25px
+				font-family $Bold
+				padding 11px 21px
+				font-size 0.75rem
+				text-transform uppercase
+				color $white
+				display inline-block
+				transition .3s
+				border 2px solid transparent
+				&:hover
+					background $white
+					color $purple
+					border 2px solid $purple
+@media(max-width: 1300px)
+	.forecasts-tags
+		&__blocks
+			&-block
+				&__footer
+					grid-template-columns 15% 70% 15%
+					&-title
+						padding-left 5px
+					&-author
+						padding-left 5px
+					&-button
+						width 38px
+						height 38px
+						p
+							display none
+						i
+							font-size 15px
+							margin-top -2px
+							margin-right -2px
+							display flex
+@media(max-width: 1140px)
+	.forecasts-tags
+		&__blocks
+			.swiper-container-forecasts
+				.swiper-wrapper
+					padding-bottom 30px
+				.swiper-pagination-bullets
+					display block
+			&-block
+				flex-basis calc(50% - 15px)
+				&:nth-child(2n+2)
+					margin-right 0
+				&__footer
+					position relative
+					&-button
+						position absolute
+						right 25px
+			&-button
+				&-item
+					padding 11px 111px
+@media(max-width: 933px)
+	.forecasts-tags
+		&__blocks
+			&-block
+				flex-basis 100%
+				margin-right 0
+@media(max-width: 768px)
+	.forecasts-tags
+		&__blocks
+			&-block
+				flex-basis calc(50% - 15px)
+@media(max-width: 650px)
+	.forecasts-tags
+		&__blocks
+			&-block
+				flex-basis 100%
+				margin-right 0
+				&__footer
+					position relative
+					&-button
+						position relative
+						right auto
+			&-button
+				&-item
+					padding 11px 47px

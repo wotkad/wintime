@@ -1,0 +1,164 @@
+.sidebar
+	.sidebar__block.is-sidebar-on-index
+		.sidebar__block-text Навигация по cайту
+		.sidebar__block-arrow
+			i.fa.fa-angle-down
+	.sidebar__container.is-sidebar-on-index
+		a(href="#").sidebar__container-link Главная
+		a(href="#").sidebar__container-link Все прогнозы
+		a(href="#").sidebar__container-link Прогнозы на сегодня
+		a(href="#").sidebar__container-link Прогнозы на завтра
+		a(href="#").sidebar__container-link Все букмекеры
+		a(href="#").sidebar__container-link Лучшие букмекеры
+		a(href="#").sidebar__container-link Бонусы
+		a(href="#").sidebar__container-link Авторы
+		a(href="#").sidebar__container-link База знаний
+	.sidebar__block.is-sidebar-on-bookmakers.is-sidebar-on-bookmakers-best.is-sidebar-on-bookmakers-public
+		.sidebar__block-text Навигация по разделу
+		.sidebar__block-arrow
+			i.fa.fa-angle-down
+	.sidebar__container.is-sidebar-on-bookmakers.is-sidebar-on-bookmakers-best.is-sidebar-on-bookmakers-public
+		a(href="#").sidebar__container-link Все букмекеры
+		a(href="#").sidebar__container-link Лучшие букмекеры
+		a(href="#").sidebar__container-link Народный рейтинг
+	.sidebar__block.is-sidebar-on-forecasts.is-sidebar-on-forecasts-tags
+		.sidebar__block-text Навигация по разделу
+		.sidebar__block-arrow
+			i.fa.fa-angle-down
+	.sidebar__container.is-sidebar-on-forecasts.is-sidebar-on-forecasts-tags
+		a(href="#").sidebar__container-link Все прогнозы
+		.sidebar__container-link Прогнозы на сегодня
+			a(href="#").sidebar__container-link-sublink Dota 2
+			a(href="#").sidebar__container-link-sublink CS:GO
+		a(href="#").sidebar__container-link Прогнозы на завтра
+	.sidebar__block.is-sidebar-on-bookmakers.is-sidebar-on-bookmakers-best.is-sidebar-on-bookmakers-public
+		.sidebar__block-text Фильтр букмекеров
+		.sidebar__block-arrow
+			i.fa.fa-angle-down
+	.sidebar__container.is-sidebar-on-bookmakers.is-sidebar-on-forecasts-tags.is-sidebar-on-bookmakers-best.is-sidebar-on-bookmakers-public
+		.sidebar__container-filter
+			.sidebar__container-filter-title Бонусы
+			input(type="text" class="js-range-slider-bookmakers" name="my_range" value="")
+	.sidebar__block.is-sidebar-on-forecasts.is-sidebar-on-forecasts-tags
+		.sidebar__block-text Фильтр прогнозов
+		.sidebar__block-arrow
+			i.fa.fa-angle-down
+	.sidebar__container.is-sidebar-on-forecasts.is-sidebar-on-forecasts-tags
+		.sidebar__container-filter
+			.sidebar__container-filter-title Вид спорта
+			.sidebar__container-filter-selector
+				.sidebar__container-filter-selector-select#result1(data-target="") Dota 2
+				.sidebar__container-filter-selector-select-arrow
+					i.fa.fa-angle-down
+			.sidebar__container-filter-filters
+				.sidebar__container-filter-filters__option(data-target="Dota 2") Dota 2
+				.sidebar__container-filter-filters__option(data-target="CS:GO") CS:GO
+		.sidebar__container-filter
+			.sidebar__container-filter-title Автор
+			.sidebar__container-filter-selector
+				.sidebar__container-filter-selector-select#result2(data-target="") Все авторы
+				.sidebar__container-filter-selector-select-arrow
+					i.fa.fa-angle-down
+			.sidebar__container-filter-filters
+				.sidebar__container-filter-filters__option.sidebar__container-filter-filters__option2(data-target="Все авторы") Все авторы
+				.sidebar__container-filter-filters__option.sidebar__container-filter-filters__option2(data-target="Популярные") Популярные
+				.sidebar__container-filter-filters__option.sidebar__container-filter-filters__option2(data-target="Новые") Новые
+	a(href="#").sidebar__block.sidebar__block-yellow.is-sidebar-on-bookmakers-single.is-sidebar-on-expert-detail.is-sidebar-on-forecast-single.is-sidebar-on-search.is-sidebar-on-knowledgesingle
+		.sidebar__block-text
+			i.fa.fa-reply
+			span Вернуться к списку
+	.sidebar__block.is-sidebar-on-index.is-sidebar-on-forecasts.is-sidebar-on-forecasts-tags.is-sidebar-on-bookmakers-single.is-sidebar-on-experts.is-sidebar-on-expert-detail.is-sidebar-on-forecast-single.is-sidebar-on-knowledgebase.is-sidebar-on-knowledgesingle
+		.sidebar__block-text Букмекеры
+		.sidebar__block-arrow
+			i.fa.fa-angle-down
+	.sidebar__container.is-sidebar-on-index.is-sidebar-on-forecasts.is-sidebar-on-forecasts-tags.is-sidebar-on-bookmakers-single.is-sidebar-on-experts.is-sidebar-on-expert-detail.is-sidebar-on-forecast-single.is-sidebar-on-knowledgebase.is-sidebar-on-knowledgesingle
+		.sidebar__container-bookmaker
+			.sidebar__container-bookmaker-item
+				.sidebar__container-bookmaker-item-img
+					img(src="/images/matches.png")
+				a(href="#").sidebar__container-bookmaker-item-link
+					.sidebar__container-bookmaker-item-link-content
+						i.fa.fa-link
+						span На сайт
+				a(href="#").sidebar__container-bookmaker-item-link
+					.sidebar__container-bookmaker-item-link-content
+						i.fa.fa-eye
+						span Обзор
+			.sidebar__container-bookmaker-item
+				.sidebar__container-bookmaker-item-prize
+					.sidebar__container-bookmaker-item-prize-bg
+					span бонус
+					span +1000
+					span руб.
+		.sidebar__container-bookmaker
+			.sidebar__container-bookmaker-item
+				.sidebar__container-bookmaker-item-img
+					img(src="/images/1xbet.png")
+				a(href="#").sidebar__container-bookmaker-item-link
+					.sidebar__container-bookmaker-item-link-content
+						i.fa.fa-link
+						span На сайт
+				a(href="#").sidebar__container-bookmaker-item-link
+					.sidebar__container-bookmaker-item-link-content
+						i.fa.fa-eye
+						span Обзор
+			.sidebar__container-bookmaker-item
+				.sidebar__container-bookmaker-item-prize
+					.sidebar__container-bookmaker-item-prize-bg
+					span бонус
+					span +1000
+					span руб.
+	.sidebar__block.is-sidebar-on-index.is-sidebar-on-forecasts.is-sidebar-on-forecasts-tags.is-sidebar-on-bookmakers-single.is-sidebar-on-experts.is-sidebar-on-expert-detail.is-sidebar-on-forecast-single.is-sidebar-on-knowledgebase.is-sidebar-on-knowledgesingle
+		.sidebar__block-text Матчи
+		.sidebar__block-arrow
+			i.fa.fa-angle-down
+	.sidebar__container.is-sidebar-on-index.is-sidebar-on-forecasts.is-sidebar-on-forecasts-tags.is-sidebar-on-bookmakers-single.is-sidebar-on-experts.is-sidebar-on-expert-detail.is-sidebar-on-forecast-single.is-sidebar-on-knowledgebase.is-sidebar-on-knowledgesingle
+		.sidebar__container-match
+			.sidebar__container-match-item
+				.sidebar__container-match-item-image(style="background: url(/images/navi.png) 50% 50% no-repeat; background-size: contain;")
+			.sidebar__container-match-item VS
+			.sidebar__container-match-item
+				.sidebar__container-match-item-image(style="background: url(/images/vp.png) 50% 50% no-repeat; background-size: contain;")
+			.sidebar__container-match-title Na’Vi vs Virtus.pro
+			a(href="#").sidebar__container-match-link
+				i.fa.fa-eye
+				span Прогнозы на матч
+				span (8)
+		.sidebar__container-match
+			.sidebar__container-match-item
+				.sidebar__container-match-item-image(style="background: url(/images/navi.png) 50% 50% no-repeat; background-size: contain;")
+			.sidebar__container-match-item VS
+			.sidebar__container-match-item
+				.sidebar__container-match-item-image(style="background: url(/images/vp.png) 50% 50% no-repeat; background-size: contain;")
+			.sidebar__container-match-title Na’Vi vs Virtus.pro
+			a(href="#").sidebar__container-match-link
+				i.fa.fa-eye
+				span Прогнозы на матч
+				span (8)
+	.sidebar__block.is-sidebar-on-bonuses
+		.sidebar__block-text Фильтр бонусов
+		.sidebar__block-arrow
+			i.fa.fa-angle-down
+	.sidebar__container.is-sidebar-on-bonuses
+		.sidebar__container-bonuses
+			.sidebar__container-bonuses-title Букмекер
+			.sidebar__container-bonuses-selector
+				.sidebar__container-bonuses-selector-select#result5(data-target="") 1xBet
+				.sidebar__container-bonuses-selector-select-arrow
+					i.fa.fa-angle-down
+			.sidebar__container-bonuses-filters
+				.sidebar__container-bonuses-filters__option(data-target="1xBet") 1xBet
+				.sidebar__container-bonuses-filters__option(data-target="Leon") Leon
+		.sidebar__container-bonuses
+			.sidebar__container-bonuses-title Бонусы
+			.sidebar__container-bonuses-cats
+				a(href="#").sidebar__container-bonuses-cats-cat Приветственные фрибеты
+				a(href="#").sidebar__container-bonuses-cats-cat Кешбеки
+				a(href="#").sidebar__container-bonuses-cats-cat Акции
+				a(href="#").sidebar__container-bonuses-cats-cat Программы лояльности
+	.sidebar__block
+		a(href="#").sidebar__block-link.callback
+			i.fa.fa-life-ring
+			.sidebar__block-link-text Обратная связь
+		.sidebar__block-bg
+			<svg width="220" height="53" viewBox="0 0 220 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M90.0002 0H0V10.5784L25.5688 36.1472C33.3792 43.9577 46.0425 43.9577 53.853 36.1472L90.0002 0ZM154.711 60H64.7108L95.5688 29.142C103.379 21.3316 116.043 21.3316 123.853 29.1421L154.711 60ZM137.747 0H220V46.1322L213.853 52.2791C206.043 60.0896 193.379 60.0896 185.569 52.2791L143.142 9.85273C140.335 7.04524 138.537 3.61075 137.747 0Z" fill="url(#paint0_linear)" fill-opacity="0.2"/><defs><linearGradient id="paint0_linear" x1="115.757" y1="-22.3823" x2="-15.9907" y2="-155.864" gradientUnits="userSpaceOnUse"><stop stop-color="#915787" stop-opacity="0.2"/><stop offset="1" stop-color="#7A5D9A" stop-opacity="0.1"/></linearGradient></defs></svg>

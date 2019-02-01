@@ -1,0 +1,190 @@
+.bookmakers
+	.separator
+		margin-bottom 20px
+	&__filter
+		display none
+		box-shadow: 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1);
+		flex-wrap wrap
+		background-color #eee
+		border-radius 15px
+		justify-content space-between
+		margin-bottom 20px
+		&-titles
+			flex-basis 100%
+			display flex
+			justify-content space-between
+			background-color #fefefe
+			border-radius 15px
+			align-items center
+			padding 10px 20px
+			&-title
+				font-family $Bold
+				line-height 24px
+				font-size 1.125rem
+				color $sidebarbg
+			&-arrow
+				cursor pointer
+				transition .3s
+				& i
+					font-size 18px
+					color $sidebarbg
+		&__container
+			display flex
+			justify-content space-between
+			flex-basis 100%
+			padding 20px
+			&-filter
+				flex-basis 100%
+				position relative
+				&:nth-child(1)
+					padding-bottom 45px
+				&-title
+					text-transform uppercase
+					font-family $Bold
+					font-size 0.5rem
+					line-height 11px
+					margin-bottom 17px
+					color $sidebarlink
+				&-selector
+					display flex
+					align-items center
+					position relative
+					&-select
+						position relative
+						border 1px solid $purple
+						padding 11px
+						border-radius 30px
+						cursor pointer
+						font-family $Regular
+						font-size 0.625rem
+						line-height 12px
+						color $purple
+						width 100%
+						text-transform uppercase
+						position relative
+						&-arrow
+							position absolute
+							right 0
+							top 0
+							border-radius 0 26px 26px 0
+							background $buttongradient
+							height 36px
+							width 30px
+							display flex
+							align-items center
+							justify-content center
+							& i
+								font-size 14px
+								transition .3s
+								line-height 7px
+								color $white
+	&__text
+		border-radius 15px
+		background $white
+		margin-bottom 20px
+		padding 20px 25px
+		box-shadow 0px 12px 18px rgba(90, 62, 126, 0.05), 0px 0px 1px rgba(10, 31, 68, 0.1)
+		&-title
+			font-family $Bold
+			font-size 1.125rem
+			line-height 24px
+			color $text
+			margin-bottom 15px
+		&-desc
+			font-size 0.75rem
+			font-family $Regular
+			color $text
+			line-height 24px
+	&__navigation
+		display flex
+		justify-content space-between
+		align-items center
+		margin-top 40px
+		&-numbers
+			display flex
+			&-number
+				font-family $Regular
+				font-size 1.125rem
+				line-height 24px
+				display flex
+				align-items center
+				justify-content center
+				margin 0 5px
+				transition .3s
+				&:hover
+					color $purple
+				&-active
+					border-radius 50%
+					width 38px
+					height 38px
+					color $white
+					background $buttongradient
+		&-prev,
+		&-next
+			p
+				display block
+				font-family $Bold
+				font-size 0.75rem
+				color $purple
+				line-height 14px
+				padding-bottom 2px
+				text-transform uppercase
+				transition .3s
+				border-bottom 1px solid transparent
+			i
+				display none
+				margin-top -1px
+			&:hover
+				border-color $purple
+		&-next
+			i
+				margin-right -1px
+		&-prev
+			i
+				margin-left -1px
+@media(max-width: 1140px)
+	.bookmakers
+		&__navigation
+			&-next,
+			&-prev
+				align-items center
+				justify-content center
+				border-radius 25px
+				width 38px
+				height 38px
+				display flex
+				font-size 16px
+				text-transform uppercase
+				color $white
+				box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+				background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+				transition .3s
+				border 2px solid transparent
+				&:hover
+					background $white
+					color $purple
+					border 2px solid $purple
+				p
+					display none
+				i
+					display flex
+@media(max-width: 991px)
+	.bookmakers__filter
+		display flex
+@media(max-width: 768px)
+	.bookmakers
+		&__filter
+			&-titles
+				padding 10px 20px
+			&__container
+				display flex
+				justify-content space-between
+				flex-basis 100%
+				flex-wrap wrap
+				&-filter
+					margin-bottom 20px
+					flex-basis 100%
+					&:nth-child(1)
+					&:nth-child(2)
+						padding-right 0
+						border-right none

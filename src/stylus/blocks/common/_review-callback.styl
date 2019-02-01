@@ -1,0 +1,180 @@
+.review-callback-bg
+	position fixed
+	background-color rgba(0,0,0,.9)
+	top 0
+	left 0
+	right 0
+	bottom 0
+	z-index -1
+	cursor pointer
+	display none
+	&__active
+		display block
+		z-index 10010
+.review-callback
+	position fixed
+	z-index -1
+	display none
+	width 500px
+	top calc(50% - 272px)
+	left calc(50% - 250px)
+	&__active
+		display block
+		z-index 10011
+	&__header
+		background-color $headerbg
+		border-radius 8px 8px 0 0
+		&-container
+			display flex
+			padding 21px 40px
+			justify-content space-between
+			align-items center
+			&-title
+				font-family $Bold
+				text-transform uppercase
+				font-size 1.75rem
+				line-height 37px
+				color $white
+			&-close
+				cursor pointer
+				i
+					color $yellow
+					font-size 28px
+	&__body
+		padding 30px 40px
+		background-color $white
+		border-radius 0 0 8px 8px
+		&-form
+			display flex
+			justify-content center
+			flex-direction column
+			align-items center
+			position relative
+			&-title
+				font-family $Bold
+				font-size 1.125rem
+				line-height 24px
+				color $text
+				margin-bottom 10px
+				width 100%
+				text-align left
+			&-rate
+				display flex
+				width 100%
+				flex-wrap wrap
+				margin-bottom 22px
+				&-star
+					margin 0 4px
+					&:nth-child(1)
+						margin-left 0
+					& i.fa-star
+						color $yellow
+					& i
+						font-size 32px
+				&-number
+					margin-left 25px
+					display flex
+					align-items center
+					span
+						&:nth-child(1)
+							font-family $Bold
+							font-size 1.125rem
+							line-height 24px
+							color $text
+						&:nth-child(2)
+							margin-left 5px
+							font-family $Regular
+							font-size 1.125rem
+							line-height 24px
+							color $text
+
+			&-select
+				cursor pointer
+				margin-bottom 20px
+				background-color #E9E9E9
+				border 1px solid #E1E4E8
+				color #A6AEBC
+				padding 14px 25px
+				width 100%
+				border-radius 10px
+				font-family $Medium
+				font-size 0.875rem
+				line-height 20px
+			&-options
+				display none
+				width 100%
+				position absolute
+				top 95px
+				overflow hidden
+				border-radius 10px
+				background-color #E9E9E9
+				border 1px solid #E1E4E8
+				&-option
+					font-family $Medium
+					font-size 0.875rem
+					line-height 20px
+					cursor pointer
+					color #a6aebc
+					padding 14px 25px
+					transition .3s
+					&:hover
+						color $sidebarlink
+						background #dbdbdb
+			textarea
+				border-radius 10px
+				border 1px solid #E1E4E8
+				width 100%
+				height 110px
+				resize none
+				font-size 0.75rem
+				padding 16px 25px
+				color #A6AEBC
+				margin-bottom 15px
+			&-button
+				width 60%
+				button
+					border 2px solid transparent
+					box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+					border-radius 25px
+					font-family $Bold
+					cursor pointer
+					padding 11px
+					font-size 0.75rem
+					width 100%
+					text-transform uppercase
+					color $white
+					background $buttongradient
+					text-align center
+					transition .3s
+					&:hover
+						background $white
+						color $purple
+						border 2px solid $purple
+@media(max-width: 768px)
+	.review-callback
+		&__header
+			&-container
+				padding 15px 20px
+				&-title
+					font-size 1.375rem
+					line-height 29px
+		&__body
+			padding 30px 20px
+@media(max-width: 650px)
+	.review-callback
+		width calc(100% - 40px)
+		left 20px
+		right 20px
+		&__body
+			&-form
+				&-policy
+					width 90%
+					p
+						margin-left 0px
+				&-rate
+					&-number
+						margin-top 10px
+						flex-basis 100%
+						margin-left 0
+				&-button
+					width 100%

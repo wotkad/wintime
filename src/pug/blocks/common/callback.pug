@@ -1,0 +1,24 @@
+.popup-bg
+.popup
+	.popup__header
+		.popup__header-container
+			.popup__header-container-title Обратная связь
+			.popup__header-container-close
+				i.fa.fa-times
+	.popup__body
+		form(action="#").popup__body-form
+			.popup__body-form-input
+				i.fa.fa-user
+				input(type="text" name="name" placeholder="Как вас зовут?")
+			.popup__body-form-input
+				i.fa.fa-envelope
+				input(type="text" name="email" placeholder="Электронная почта")
+			textarea.popup__body-form-textarea(name="text" placeholder="Ваше сообщение")
+			label.popup__body-form-policy
+				input.checkbox(type="checkbox" name="radio-test" required="required" checked)
+				span.checkbox-custom
+				div
+					p Даю согласие на
+					a(href="#") обработку персональных данных
+			.popup__body-form-button
+				button(type="submit") Отправить

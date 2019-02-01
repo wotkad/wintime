@@ -1,0 +1,157 @@
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	outline: none
+	text-decoration none
+
+a
+	text-decoration none
+	color $black
+
+html,
+body
+	height 100%
+	background $bg
+
+ul li
+	letter-spacing normal
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder
+	font-family $Regular
+	font-weight 100
+
+textarea::-moz-placeholder,
+input::-moz-placeholder
+	font-family $Regular
+	font-weight 100
+
+textarea:-moz-placeholder,
+input:-moz-placeholder
+	font-family $Regular
+	font-weight 100
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder
+	font-family $Regular
+	font-weight 100
+
+section
+	height calc(100vh - 130px)
+	width calc(100% - 220px)
+	left 220px
+	position relative
+	top 130px
+	bottom 0px
+	.mCSB_scrollTools
+		width 16px
+		top 10px
+		bottom 10px
+.container
+	padding 0 30px 30px
+.separator
+	border: 1px solid #dbdbdb;
+	width 100%
+
+.swiper-pagination-bullet
+	box-shadow 0px 4px 30px rgba(0, 0, 0, 0.1)
+	height 20px
+	width 20px
+	border 1px solid $purple
+	background transparent
+.swiper-pagination-bullet-active
+	background $purple
+
+.swiper-button-prev,
+.swiper-button-next
+	background linear-gradient(158.89deg, #9537A5 25.2%, #7140B3 79.4%)
+	border-radius 50%
+	height 38px
+	width 38px
+	display flex
+	align-items center
+	box-shadow 0px 4px 20px rgba(84, 53, 124, 0.3)
+	justify-content center
+	& i
+		color $white
+		margin-top -1px
+		font-size 16px
+		border 2px solid transparent
+		transition .3s
+	&:hover i
+		color $purple
+	&:hover
+		border 2px solid $purple
+		background $white
+.swiper-button-prev
+	left -19px
+	& i
+		margin-left -1px
+.swiper-button-next
+	right -19px
+	& i
+		margin-right -1px
+.checkbox
+	display none
+.checkbox-custom
+	width 20px
+	height 20px
+	border-radius 3px
+	border 2px solid #ededed
+	background $white
+	position relative
+	padding 4px
+	transition .3s
+	cursor pointer
+.checkbox-custom:hover
+	border-color $green
+.checkbox-custom
+	display inline-block
+	vertical-align middle
+	cursor pointer
+.checkbox:checked + .checkbox-custom
+	border-color $green
+	background $white
+.checkbox:checked + .checkbox-custom::before
+	content ""
+	display block
+	position absolute
+	top 0
+	right 0
+	bottom 0
+	left 0
+.checkbox:checked + .checkbox-custom::after
+	content ""
+	display flex
+	align-items center
+	justify-content center
+	width 12px
+	height 12px
+	background url(/images/check.png) 100% 100% no-repeat
+	background-size contain
+	position absolute
+	left 2px
+	top 2px
+.checkbox-custom
+	border-radius 4px
+@media (max-width:991px)
+	html
+		font-size 14px
+	section
+		left 0
+		width 100%
+		height 100vh
+	.container
+		overflow auto
+@media(max-width: 561px)
+	section
+		height calc(100vh - 114px)
+		top 114px
+@media (max-width:375px)
+	.g-wrapper
+		width 100%
+		padding 0 20px
+	.container
+		margin-bottom 20px
+		padding 0 20px

@@ -1,0 +1,26 @@
+.registrationpopup-bg
+.registrationpopup
+	.registrationpopup__header
+		.registrationpopup__header-container
+			.registrationpopup__header-container-title Регистрация
+			.registrationpopup__header-container-close
+				i.fa.fa-times
+	.registrationpopup__body
+		form(action="#").registrationpopup__body-form
+			.registrationpopup__body-form-input
+				i.fa.fa-user
+				input(type="text" name="name" placeholder="Имя и фамилия")
+			.registrationpopup__body-form-input
+				i.fa.fa-envelope
+				input(type="text" name="email" placeholder="Электронная почта")
+			.registrationpopup__body-form-input
+				i.fa.fa-lock
+				input(type="text" name="password" placeholder="Пароль")
+			label.registrationpopup__body-form-policy
+				input.checkbox(type="checkbox" name="radio-test" required="required" checked)
+				span.checkbox-custom
+				div
+					p Даю согласие на
+					a(href="#") обработку персональных данных
+			.registrationpopup__body-form-button
+				button(type="submit") Зарегестрироваться
